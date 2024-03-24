@@ -3,7 +3,7 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: url(../images/fundo.png);
+    background-image: url(../images/fundo2.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -11,6 +11,10 @@
 
     .container {
         position: relative;
+
+        li a {
+            color: variables.$pink;
+        }
     }
 
     &::before {
@@ -19,18 +23,21 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: variables.$secondaryTextColor;
+        background-color: variables.$pink;
         content: '';
-        opacity: 0.7;
+        opacity: 0.5;
+        
     }
 
     &__text {
         margin-top: 64px;
         margin-bottom: 64px;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 56px;
         font-weight: 800;
         text-align: center;
+        background-color: variables.$lblue;
+        border-radius: 90%;
     }
 
     &__logo {

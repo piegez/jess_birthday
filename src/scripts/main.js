@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataDoEvento = new Date("Dec 23, 2024 19:00:00");
+const dataDoEvento = new Date("Sep 7, 2024 13:00:00");
 const timeStampDoEvento = dataDoEvento.getTime();
 
 const contaAsHoras = setInterval(function() {
@@ -24,3 +24,9 @@ const contaAsHoras = setInterval(function() {
         document.getElementById('contador').innerHTML = "Evento expirado";
     } 
 }, 1000);
+
+function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+}
